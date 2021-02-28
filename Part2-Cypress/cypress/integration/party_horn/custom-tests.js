@@ -119,7 +119,7 @@ describe('Party Horn Tests', () => {
   });
 
   //fourth
-  it('last one', () => {
+  it('Test if error shown when text boc input out of range', () => {
     cy.get('#volume-number').clear().type("101");
     cy.get('input:invalid').should('have.length', 1) // searching for one error
 
